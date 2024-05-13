@@ -1,0 +1,35 @@
+/* styles.css */
+
+body {
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-position: center;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 95px;
+    color: #F40E26;
+    padding-top: 50px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}

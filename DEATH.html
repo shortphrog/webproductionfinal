@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="styles.css">
+    <title>Death Screen</title>
+    <style>
+        body {
+            background-image: url('death.gif');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            height: 100vh;
+            margin: 0; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #deathScreen {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7); 
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #deathScreen h2 {
+            color: #ff0000;
+        }
+        #deathScreen button {
+            background-color: #ff0000;
+            color: #ffffff; /
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="deathScreen">
+        <h2>You have died!</h2>
+        <p>Game Over</p>
+        <button onclick="retry()">Retry</button>
+    </div>
+
+    <script>
+        function retry() {
+            window.location.href = 'index.html'; 
+        }
+    </script>
+</body>
+</html>

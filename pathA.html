@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path A</title>
+	<link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div id="storyDay1">
+		<h2> Hello Traveler</h2>
+        <p>You are greeted by a fork road. Which do you decide to go down?</p>
+        <button onclick="choosePath('AA') ; changetoCave()">Left</button>
+		<br><br>
+        <button onclick="choosePath('AB'); changetoMeadow()">Right</button>
+    </div>
+	<div id="storyDay1AA" style="display: none; ">
+		<h2>Day 1: The Cave </h2>
+        <p>You look back and the path you took no longer exists.Instead you are facing the entrance of the cave, You have no choice but to enter. It takes a while for your eyes to adjust but during that time you realize you hear a body of water within the cave. You:</p>
+        <button onclick="choosePath('AAA')">Set up camp and ignore the sounds</button>
+		<br><br>
+        <button onclick="choosePath('AAB')">Venture further into the cave</button>
+    </div>
+	<div id="storyDay1AAA" style="display: none;">
+		<h2>Day 1: The Cave </h2>
+        <p>It took sometime to get used to wierd sounds in the cave but you try your best to fall asleep. You start to get hungry and restless, so you:</p>
+        <button onclick="choosePath('AAB')">Get up and continue into the cave</button>
+		<br><br>
+        <button onclick="choosePath('AAAB')">Shut your eyes tight and pray you fall asleep</button>
+	 </div>
+	<div id="storyDay1AAB" style="display: none;">
+		<h2>Day 1: The Cave </h2>
+        <p>You slowly walk deeper into the cave following the sounds of the water. However, before you know it you end up landing in a swarm of spiders. There you see the king of spiders. You:</p>
+        <button onclick="choosePath('AABA')">Run</button>
+		<br><br>
+        <button onclick="choosePath('AABB')">Wait</button>
+		 <img src="spider.gif" alt="Spider GIF">
+    </div>
+	<div id="storyDay1AABB" style="display: none;">
+		<h2>Day 1: The Cave </h2>
+        <p>The spider king approaches you and asks for an offering,You:</p>
+        <button onclick="choosePath('AABBA')">Give an offering</button>
+		<br><br>
+    </div>
+	
+	<div id="storyDay1AABBA" style="display: none;">
+		<h2>Day 1: The Cave </h2>
+        <p>The spider king approaches you asking for an offering. You realize you dont have any so you choose to run.</p>
+		<br><br>
+        <button onclick="choosePath('AABA')">Next</button>
+		<br><br>
+		 <img src="spider.gif" alt="Spider GIF">
+    </div>
+	<div id="storyDay1AABA" style="display: none;">
+		<h2>Day 1: The Cave </h2>
+        <p>You start running as you hear the spiders chase after you. You find yourself tripping with the spiders drawing close.</p>
+		<br><br>
+        <button onclick="choosePath('DEATH')">Next</button>
+    </div>
+   
+	
+	<div id="storyDay1AAAB" style="display: none;">
+		<h2>Day 2: The Cave </h2>
+        <p>You wake up the next morning and magically the entrance reappeared. You exit the cave into the sun.</p>
+        <button onclick="choosePath('Day2')">NEXT</button>
+    </div>
+	
+	
+	<div id="storyDay1AB" style="display: none;">
+		<h2>Day 1: The meadows</h2>
+        <p>You take a look around only to realize that you ended up in a meadow. It seems to be a flower field. For some reason you feel at ease. You:</p>
+        <button onclick="choosePath('ABA')">Take a nap under a tree</button>
+		<br><br>
+        <button onclick="choosePath('ABB')">Attempt to make a flower crown</button>
+    </div>
+	<div id="storyDay1ABA" style="display: none;">
+		<h2>Day 1: The meadows</h2>
+        <p>You wake up from your nap extremely refreshed! You see that the sun is slowly going down. You estimate that in about an hour it will be pitch black. You:</p>
+        <button onclick="choosePath('ABAA')">Attempt to bulid a makeshift camp under the tree</button>
+		<br><br>
+        <button onclick="choosePath('ABAB')">Look around for something to eat</button>
+    </div>
+	<div id="storyDay1ABAB" style="display: none;">
+		<h2>Day 1: The meadows</h2>
+        <p>You start looking around for something to eat. You leave the meadow and venture further into the woods. There you see a deer and some berries. You:</p>
+        <button onclick="choosePath('ABABA')">Chase after the deer </button>
+		<br><br>
+        <button onclick="choosePath('ABABB')">Start picking the berries</button>
+    </div>
+	<div id="storyDay1ABABB" style="display: none;">
+		<h2>Day 1: The meadows</h2>
+        <p>After picking and eating the berries, you feel a little dizzy. You aren't sure if its because you ate too fast so you lie down.</p>
+        <button onclick="choosePath('DEATH')">Next</button>
+    </div>
+	<div id="storyDay1ABABA" style="display: none;">
+		<h2>Day 1: The meadows</h2>
+        <p>While chasing the deer, you hear leaves rustling and realize that you have no clue where you are. You look behind you and there a big scary plant</p>
+        <button onclick="choosePath('DEATH')">NEXT</button>
+		<br><br>
+       <img src="plant.gif" alt="Plant GIF">
+    </div>
+	<div id="storyDay1ABB" style="display: none;">
+		<h2>Day 1: The meadows</h2>
+        <p>After spending some time trying to make a flower crown, you realize making flower crowns are a lot harder than it seems. You:</p>
+        <button onclick="choosePath('ABBA')">Keep trying</button>
+		<br><br>
+        <button onclick="choosePath('ABAA')">Scrap the idea and look for the nearest tree to set up a camp</button>
+	</div>
+	<div id="storyDay1ABBA" style="display: none;">
+		<h2>Day 1: The meadows</h2>
+        <p>After spending some time attempting, you finally get the hang of it. You finally finished making the flower crown and you look up. There watching you was a fairy. The fairy gestures at your crown. You:</p>
+        <button onclick="choosePath('ABBAA')">Give it to her</button>
+		<br><br>
+        <button onclick="choosePath('ABBAB')">Shake your head no</button>
+    </div>
+	<div id="storyDay1ABBAA" style="display: none;">
+		<h2>Day 1: The meadows</h2>
+        <p>The fairy happily takes the crown you made.</p>
+        <button onclick="choosePath('ABBAAC')">Next</button>
+    </div>
+	<div id="storyDay1ABBAAC" style="display: none;">
+		<h2>Day 1: The meadows</h2>
+        <p>The fairy gestures you to follow her.</p>
+        <button onclick="choosePath('Happy')">Next</button>
+    </div>
+	<div id="storyDay1ABAA" style="display: none;">
+		<h2>Day 1: The meadows</h2>
+        <p>Success! You made a camp and have a small fire going. You are a bit hungry but leave that as a tommorow issue. You decide to go to sleep</p>
+        <button onclick="choosePath('Day2')">Next</button>
+    </div>
+    <script>
+		function changetoCave(){
+			document.body.style.backgroundImage= "url('cave.png')"
+			document.body.style.backgroundSize= "cover"
+			document.body.style.backgroundPosition= "center"
+			document.body.style.color="white"
+		}
+		function changetoMeadow(){
+			document.body.style.backgroundImage= "url('meadows.jpg')"
+			document.body.style.backgroundSize= "cover"
+			document.body.style.backgroundPosition= "center"
+			document.body.style.backgroundRepeat= "no-repeat"
+			document.body.style.color="black"
+		}
+          function choosePath(path) {
+            document.getElementById('storyDay1').style.display = 'none';
+            if (path === 'AA') {
+                document.getElementById('storyDay1AA').style.display = 'block';
+            } else if (path === 'AB') {
+                document.getElementById('storyDay1AB').style.display = 'block';
+            } else if (path === 'AAA') {
+				document.getElementById('storyDay1AA').style.display = 'none'
+                document.getElementById('storyDay1AAA').style.display = 'block';
+            } else if (path === 'AAB') {
+                document.getElementById('storyDay1AA').style.display = 'none'
+				document.getElementById('storyDay1AAA').style.display = 'none'
+                document.getElementById('storyDay1AAB').style.display = 'block';
+            } else if (path === 'ABA') {
+                document.getElementById('storyDay1AB').style.display = 'none'
+                document.getElementById('storyDay1ABA').style.display = 'block';
+            } else if (path === 'ABB') {
+				document.getElementById('storyDay1AB').style.display = 'none'
+                document.getElementById('storyDay1ABB').style.display = 'block';
+			} else if (path === 'ABAA') {
+				document.getElementById('storyDay1ABB').style.display = 'none'
+                document.getElementById('storyDay1ABAA').style.display = 'block';
+			} else if (path === 'AAAB') {
+				document.getElementById('storyDay1AAA').style.display = 'none'
+                document.getElementById('storyDay1AAAB').style.display = 'block';
+			} else if (path === 'AABB') {
+				document.getElementById('storyDay1AAB').style.display = 'none'
+                document.getElementById('storyDay1AABB').style.display = 'block';
+			} else if (path === 'AABBA') {
+				document.getElementById('storyDay1AABB').style.display = 'none';
+                document.getElementById('storyDay1AABBA').style.display = 'block';
+		
+			} else if (path === 'AABA') {
+				document.getElementById('storyDay1AAB').style.display = 'none';
+				document.getElementById('storyDay1AABBA').style.display = 'none';
+                document.getElementById('storyDay1AABA').style.display = 'block';
+			} else if (path === 'ABABA') {
+				document.getElementById('storyDay1ABAB').style.display = 'none';
+                document.getElementById('storyDay1ABABA').style.display = 'block';
+			} else if (path === 'ABBA') {
+				document.getElementById('storyDay1ABB').style.display = 'none';
+                document.getElementById('storyDay1ABBA').style.display = 'block';
+			} else if (path === 'ABAB') {
+				document.getElementById('storyDay1ABA').style.display = 'none';
+                document.getElementById('storyDay1ABAB').style.display = 'block';
+			} else if (path === 'ABBAA') {
+				document.getElementById('storyDay1ABBA').style.display = 'none';
+                document.getElementById('storyDay1ABBAA').style.display = 'block';
+			} else if (path === 'ABBAAC') {
+				document.getElementById('storyDay1ABBAA').style.display = 'none';
+                document.getElementById('storyDay1ABBAAC').style.display = 'block';
+			} else if (path === 'ABABB') {
+				document.getElementById('storyDay1ABAB').style.display = 'none';
+                document.getElementById('storyDay1ABABB').style.display = 'block';
+			} else if (path === 'Happy') {
+				window.location.href = 'Happy.html';
+			} else if (path === 'Day2') {
+				window.location.href = 'Day2.html';
+			} else if (path === 'DEATH') {
+				window.location.href = 'DEATH.html';
+            }
+			  
+        }
+    </script>
+</body>
+</html>

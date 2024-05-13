@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+	 <div id="storyPart1" style="display: block;">
+        <h2>Day 2:</h2>
+        <p> You wake up feeling a little odd. But your body feels fine. You look around only to realize you are lost.</p>
+		<br><br>
+		<button onclick="choosePath('A')">Next</button>
+	
+    </div>
+	 <script>
+        
+        function choosePath(path) {
+            if (path === 'A') {
+                window.location.href = 'pathA.html';
+			}
+        }
+    </script>
+</body>
+</html>

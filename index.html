@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Story</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="intro">
+        <h1>Welcome to the Enchanted Forest</h1>
+        <p1>Are you ready to embark on an adventure?</p1>
+		<br><br>
+        <button onclick="startGame()">Start</button>
+    </div>
+
+    <div id="characterSelection" style="display: none;">
+        <h2>Select Your Character</h2>
+        <button onclick="selectCharacter(1)">
+            <img src="character1.png" alt="character1">
+        </button>
+		<br><br>
+        <button onclick="selectCharacter(2)">
+            <img src="character2.png" alt="character2"> 
+        </button>
+    </div>
+
+    <div id="storyPart1" style="display: none;">
+        <h2>Day 1: The Beginning</h2>
+        <p> You find yourself at the entrance of an enchanted forest. You are a little confused but more intrigued. Do you:</p>
+		<br><br>
+		<button onclick="choosePath('A')">Enter the woods</button>
+		<br><br>
+        <button onclick="choosePath('B')">Look around the entrance</button>
+    </div>
+   
+   <div id="storyPart2" style="display: none;">
+        <p>While you are looking around the entrance, you find a random object. Its a journal. You decide to open the contents where it reads</p>
+	   <br><br>
+	    <p>While you are in the woods always be alert and polite, avoid going into caves (if you find yourself in one do NOT venture deeper) 
+			ps. Fairies like flower crowns. </p>
+        <button onclick="choosePath('C')">Next</button>
+	</div>
+
+    <script>
+        function startGame() {
+            document.getElementById('intro').style.display = 'none';
+            document.getElementById('characterSelection').style.display = 'block'; 
+        }
+
+        function selectCharacter(character) {
+            // Handle selection
+            document.getElementById('characterSelection').style.display = 'none'; 
+            document.getElementById('storyPart1').style.display = 'block'; 
+            if (character === 1) {
+                document.getElementById('characterGraphic').innerHTML = "<img src='character1.png' alt='Character 1' style='position: fixed;'>";
+            } else if (character === 2) {
+                document.getElementById('characterGraphic').innerHTML = "<img src='character2.png' alt='Character 2' style='position: fixed;'>";
+            }
+        }
+
+        function choosePath(path) {
+            if (path === 'A') {
+                window.location.href = 'pathA.html';
+            } else if (path === 'B') {
+                document.getElementById('storyPart1').style.display = 'none';
+				document.getElementById('storyPart2').style.display = 'block';
+            } else if (path === 'C') {
+                window.location.href = 'pathA.html';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+body {
+    background-image: url('background.jpeg');
+    background-size: auto;
+    background-position: center;
+/*	background-repeat:no-repeat;*/
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+    text-align: center;
+    padding-top: 100px;
+	
+}
+
+h1 {
+    font-size: 95px;
+    color: #F40E26;
+    padding-top: 50px;
+}
+
+p1 {
+    color: #9E9E9E;
+    margin-bottom: 20px;
+	padding: 5px;
+	background-color: #3E3C38;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+	font-size: 30px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+	font-family: Cambriadefault;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 25px;
+    line-height: 2;
+    color: #7b5e2d; /* Brownish color */
+    text-shadow: 1px 1px 1px #000; /* Text shadow for depth */
+    padding: 20px 20px 20px 20px;
+    background-color: #BBB749; /* Parchment-like background color */
+    border: 2px solid #8F8D00; /* Border resembling scroll edges */
+    border-radius: 100px; /* Rounded corners */
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);  /* Inner shadow for depth */
+    /* transform: rotate(-3deg); /* Rotate the text slightly */
+	white-space: break-spaces;
+}
+
+.spider-gif {
+    width: 400px; /* Adjust the width as needed */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    margin-top: 20px; /* Add some space between the buttons and the image */
+}
+#characterSelection{
+	background-position: center;
+	background-size: auto; 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#intro{
+	background-repeat:no-repeat;
+}
+#storyPart1{
+	background-position: center;
+	background-size: auto; 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#storyDay1AA{ 
+	height: 100vh;
+	width: 100vw;
+	
+}
+
+#storyDay1AB{ 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#storyDay1AAA{ 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#storyDay1AAB{ 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#storyDay1AABA{ 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#storyDay1AABB{ 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#storyDay1AABBA{ 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#storyDay1AABBB{ 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#storyDay1ABB{ 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#storyDay1ABA{ 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#storyDay1ABAA{ 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#storyDay1ABAB{ 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#storyDay1ABABA{ 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#storyDay1AAAAB{ 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#storyDay1ABB{ 
+	height: 100vh;
+	width: 100vw;
+	
+}
+#storyDay1AAAB{
+	height: 100vh;
+	width: 100vw;
+}
+#storyDay1ABBA{
+	height: 100vh;
+	width: 100vw;
+}
+#storyDay1ABBAA{
+	height: 100vh;
+	width: 100vw;
+}
+#storyDay1ABBAAC{
+	height: 100vh;
+	width: 100vw;
+}
+#storyDay1ABABB {
+	height: 100vh;
+	width: 100vw;
+}
+#storyDay1AABBB {
+	height: 100vh;
+	width: 100vw;
+}
